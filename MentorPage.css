@@ -1,0 +1,118 @@
+/* Mentor Page Overall Container */
+.mentor-page {
+  min-height: 100vh;
+  /* Replace with your desired mentor background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Main Content Area */
+.content {
+  text-align: center;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent footer */
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+}
